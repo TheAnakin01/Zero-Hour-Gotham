@@ -1,0 +1,16 @@
+{
+  "start": "library",
+  "win_room": "canteen",
+  "rooms": {
+    "library": {
+      "description": "Dusty shelves everywhere.",
+      "exits": {"east": "canteen"},
+      "items": ["key"]
+    },
+    "canteen": {
+      "description": "You made it to the canteen!",
+      "exits": {"west": "library"},
+      "items": []
+    }
+  }
+}
