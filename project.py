@@ -35,6 +35,11 @@ def describe(level, state):
     exits = level["rooms"][location]["exits"]
     direction = "Exits: "  + ", ".join(exits)
     describe1 = description1 + "\n" + direction
+    items = level["rooms"][location]["items"]
+    elongated_items = "Items: " + ", ".join(items)
+    len_items = len(items)
+    if len_items != 0:
+        describe1 = description1 + "\n" + direction + "\n" + elongated_items
     return describe1
 
 
