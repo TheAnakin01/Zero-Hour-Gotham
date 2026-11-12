@@ -49,7 +49,7 @@
     },
     "hod_cabin": {
       "description": "Ajinkya is already inside, logged into the HOD’s computer. ‘Bhai, Mai teri proxy pichle 2 saal se laga raha hu. You thought I’d stop now?’ Karan deletes his name from the defaulter's list, then hovers over Gururaj’s. ‘Some myths must stay on the list.’ Zero Hour. Gotham is saved. Roll credits... Kushal is learning CSS now. Abhijit is in hour eight of the call. Vishwesh finally gets to meet vishwesh jr (random kid). POST-CREDITS SCENE: Prof. Varsha finishes the chai and looks at the list. ‘Interesting.’ ZERO HOUR GOTHAM 2: THE PRACTICALS. YOU WIN!",
-      "exits": {"south": "staff_corridor"},
+      "exits": {},
       "items": []
     }
   }

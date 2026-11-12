@@ -5,6 +5,7 @@ def main():
     state = {"room": level["start"],"inventory":[], "visited":[]}
     sentences = ["pick", "grab", "take"]
     print(describe(level, state))
+    print("Type 'help' for commands.")
     while True:
         text = input("> ")
         verb, noun = parse_command(text)
@@ -22,7 +23,12 @@ def main():
             state, message = take(level, state, noun)
             print(message)
         elif verb == "inventory":
-            print(state["inventory"])
+            if len(state["inventory"]) == 0:
+                print("You aren't carrying anything. Not even attendance.")
+            else:
+                print("You carry: " + ", ".join(state["inventory"]))
+        elif verb == "help":
+            print("Commands: go <direction>, pick <item>, inventory, help, quit")
         else:
             print("I don't understand.")
         
@@ -41,13 +47,16 @@ def describe(level, state):
     else:
         description1 = level["rooms"][location]["short"]
     exits = level["rooms"][location]["exits"]
-    direction = "Exits: "  + ", ".join(exits)
-    describe1 = description1 + "\n" + direction
     items = level["rooms"][location]["items"]
-    elongated_items = "Items: " + ", ".join(items)
-    len_items = len(items)
-    if len_items != 0:
-        describe1 = description1 + "\n" + direction + "\n" + elongated_items
+
+    describe1 = description1
+
+    if len(exits) != 0:
+        describe1 += "\n" + "Exits: " + ", ".join(exits)
+
+    if len(items) != 0:
+        describe1 += "\n" + "Items: " + ", ".join(items)
+
     return describe1
 
 
