@@ -16,6 +16,8 @@ def main():
             state, message = move(level, state, noun)
             print(message)
             print(describe(level, state))
+            if is_won(level, state):
+                break
         elif verb in sentences:
             state, message = take(level, state, noun)
             print(message)
@@ -26,7 +28,7 @@ def main():
         
 
 def load_level(path):
-    with open(path, "r") as file:
+    with open(path, "r", encoding="utf-8") as file:
         level = json.load(file)
         return level
 
@@ -96,6 +98,13 @@ def take(level, state, item):
         return state, f"You picked up the {item}."
     else:
         return state, f"There's no {item} here."
+
+
+def is_won(level, state):
+    if state["room"] == level["win_room"]:
+        return True
+    else:
+        return False
 
 
 if __name__ == "__main__":
