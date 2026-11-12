@@ -4,7 +4,7 @@
   "win_room": "hod_cabin",
   "rooms": {
     "gate": {
-      "description": "Karan steps out of a cab. The meter reads ₹800. Batman has a Batmobile; Karan has Uber. At the gate, Gururaj sips from a Thums Up bottle that is definitely not Thums Up. ‘Six semesters on the defaulter list, I’m basically a senior advisor dude.’ He hands over Karan’s the Batman cape just as his phone buzzes: ‘Defaulter list submission: 60 minutes.’ The gate to the north is locked. Security wants an ID card.",
+      "description": "Karan steps out of a cab. The meter reads ₹800. Batman has a Batmobile; Karan has Uber. At the gate, Gururaj sips from a Thums Up bottle that is definitely not Thums Up. ‘Six semesters on the defaulter list, I’m basically a senior advisor now.’ He hands over Karan the Batman cape just as his phone buzzes: ‘Defaulter's list releasing in 60 minutes.’ The gate to the north is locked. Security wants an ID card.",
       "exits": {"west": "canteen", "north": "corridor"},
       "items": ["cape"],
       "locked": {"north": "card"}
@@ -15,7 +15,7 @@
       "items": ["card", "chai"]
     },
     "corridor": {
-      "description": "The empty, dark corridors of SCOE. To the north, Prof. Varsha patrols the staff corridor, holding the defaulter list. Nobody gets past her empty-handed. The library is west, the computer lab is east.",
+      "description": "The empty, dark corridors of SCOE. To the north, Prof. Varsha patrols the staff corridor, holding the defaulter's list. Nobody gets past her empty-handed. The library is west, the computer lab is east.",
       "exits": {"south": "gate", "west": "library", "east": "lab", "north": "staff_corridor"},
       "items": [],
       "locked": {"north": "chai"}
@@ -26,19 +26,19 @@
       "items": ["flashlight"]
     },
     "lab": {
-      "description": "In the glow of the flashlight, Abhijeet is caught playing Roblox on a college PC, while on a video call with his girlfriend. Hour six. ‘Babe, one second, Batman is here.’ His girlfriend squints at the screen: ‘Just give him the key.’ Abhijeet obeys instantly and tosses Karan the staff key he ‘borrowed’ last semester, without looking up from the game. The corridor is back to the west.",
+      "description": "In the glow of the flashlight, Abhijit Chandrakant Kapure is caught playing Roblox on a college PC, while on a video call with his girlfriend. Hour six. ‘Babe, one second, Batman is here.’ His girlfriend squints at the screen: ‘Just give him the key.’ Abhijeet obeys instantly and tosses Karan the staff key he ‘borrowed’ last semester from DS HOD, without looking up from the game. The corridor is back to the west.",
       "exits": {"west": "corridor"},
       "items": ["key"],
       "dark": true
     },
     "staff_corridor": {
-      "description": "The air fills with ゴゴゴゴ. Prof. Varsha stands in the middle of the corridor, menacing, the defaulter list in her hand. Karan’s name is circled in red. Twice. She adjusts her glasses. The lenses flash. Somewhere, a background track starts playing. Then she sees the chai. Her villain aura vanishes: ‘Is this from the canteen? With elaichi?’ While she sips, Karan tiptoes past, cape fluttering for no reason. The HOD’s cabin is to the north, but its door is locked.",
+      "description": "The air fills with ゴゴゴゴ. Prof. Varsha stands in the middle of the corridor, menacing, the defaulter's list in her hand. Karan’s name is circled in red. Twice. She adjusts her glasses. The lenses flash. Somewhere, a background track starts playing. Then she sees the chai. Her villain aura vanishes: ‘Is this from the canteen? With elaichi?’ While she sips, Karan tiptoes past, cape fluttering for no reason. The HOD’s cabin is to the north, but its door is locked.",
       "exits": {"south": "corridor", "north": "hod_cabin"},
       "items": [],
       "locked": {"north": "key"}
     },
     "hod_cabin": {
-      "description": "Ajinkya is already inside, logged into the HOD’s computer. ‘Bhai, I’ve been signing your proxy for last two years. You thought I’d stop now?’ Karan deletes his name from the defaulter list, then hovers over Gururaj’s. ‘Some myths must stay on the list.’ Zero Hour. Gotham is saved. Roll credits... Kushal is learning CSS now. Abhijeet is in hour seven of the call. Vishwesh finally gets to meet vishwesh jr (random kid). POST-CREDITS SCENE: Prof. Varsha finishes the chai and looks at the list. ‘Interesting.’ ZERO HOUR GOTHAM 2: THE PRACTICALS. YOU WIN!",
+      "description": "Ajinkya is already inside, logged into the HOD’s computer. ‘Bhai, Mai teri proxy pichle 2 saal se laga raha hu'. You thought I’d stop now?’ Karan deletes his name from the defaulter's list, then hovers over Gururaj’s. ‘Some myths must stay on the list.’ Zero Hour. Gotham is saved. Roll credits... Kushal is learning CSS now. Abhijit is in hour seven of the call. Vishwesh finally gets to meet vishwesh jr (random kid). POST-CREDITS SCENE: Prof. Varsha finishes the chai and looks at the list. ‘Interesting.’ ZERO HOUR GOTHAM 2: THE PRACTICALS. YOU WIN!",
       "exits": {"south": "staff_corridor"},
       "items": []
     }
