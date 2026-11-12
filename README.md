@@ -1,6 +1,6 @@
 # Zero Hour Gotham
-#### Video Demo: <PASTE YOUR YOUTUBE LINK HERE>
-#### Description:
+#### Video Demo : <PASTE YOUR YOUTUBE LINK HERE>
+#### Description: Zero Hour Gotham: a JSON-driven text adventure engine in Python.
 
 ## The story
 Zero Hour Gotham is a text adventure game starring my friend Mr. Karan Sasane, aka 'The Batman'.
