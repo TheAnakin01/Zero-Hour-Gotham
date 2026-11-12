@@ -15,6 +15,11 @@ def main():
             state, message = move(level, state, noun)
             print(message)
             print(describe(level, state))
+        elif verb == "pick":
+            state, message = take(level, state, noun)
+            print(message)
+        elif verb == "inventory":
+            print(state["inventory"])
         else:
             print("I don't understand.")
         
