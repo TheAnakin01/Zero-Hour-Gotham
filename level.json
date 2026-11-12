@@ -8,7 +8,8 @@
       "short": "The Gate. Gururaj is still advising nobody in particular.",
       "exits": {"west": "canteen", "north": "corridor"},
       "items": ["cape"],
-      "locked": {"north": "card"}
+      "locked": {"north": "card"},
+      "locked_text":{"north": "Karan flashes his Gym membership at the guard. It does not work. You need your ID card."}
     },
     "canteen": {
       "description": "Kushal is sipping chai while a first-year girl from Civil teaches him HTML. Karan’s forgotten ID card is under Kushal’s plate. A spare cutting chai sits on the counter. Prof. Varsha never says no to chai.",
@@ -21,7 +22,8 @@
       "short": "The dark SCOE corridor. Library west, lab east, Prof. Varsha north",
       "exits": {"south": "gate", "west": "library", "east": "lab", "north": "staff_corridor"},
       "items": [],
-      "locked": {"north": "chai"}
+      "locked": {"north": "chai"},
+      "locked_text": {"north": "Karan?. At this hour?’Prof. Varsha raises the defaulter list like a shield. Karan retreats. Maybe something from the canteen would help distract her."}
     },
     "library": {
       "description": "Silent shelves, and painful, heartbroken memories crying aloud. In the far corner, Vishwesh studies by the light of a single flashlight. Karan pauses at the shelf where something happened in first year. Vishwesh doesn’t look up: ‘Don’t. Just take the flashlight.’ The corridor is back to the east.",
@@ -34,14 +36,16 @@
       "short": "The lab. Abhijit's call continues. Hour seven.",
       "exits": {"west": "corridor"},
       "items": ["key"],
-      "dark": true
+      "dark": true,
+      "dark_text": "Karan steps into the lab and walks straight into a chair. Somewhere in the dark, someone whispers: ‘Babe, someone’s here. No, I’m not hanging up.’ You need a light."
     },
     "staff_corridor": {
       "description": "The air fills with ゴゴゴゴ. Prof. Varsha stands in the middle of the corridor, menacing, the defaulter's list in her hand. Karan’s name is circled in red. Twice. She adjusts her glasses. The lenses flash. Somewhere, a background track starts playing. Then she sees the chai. Her villain aura vanishes: ‘Is this from the canteen? With elaichi?’ While she sips, Karan tiptoes past, cape fluttering for no reason. The HOD’s cabin is to the north, but its door is locked.",
       "short": "Prof. Varsha, awaits",
       "exits": {"south": "corridor", "north": "hod_cabin"},
       "items": [],
-      "locked": {"north": "key"}
+      "locked": {"north": "key"},
+      "locked_text":{"north": "The HOD’s door won’t budge. Karan considers the window. It’s the fifth floor. You need the key!"}
     },
     "hod_cabin": {
       "description": "Ajinkya is already inside, logged into the HOD’s computer. ‘Bhai, Mai teri proxy pichle 2 saal se laga raha hu. You thought I’d stop now?’ Karan deletes his name from the defaulter's list, then hovers over Gururaj’s. ‘Some myths must stay on the list.’ Zero Hour. Gotham is saved. Roll credits... Kushal is learning CSS now. Abhijit is in hour eight of the call. Vishwesh finally gets to meet vishwesh jr (random kid). POST-CREDITS SCENE: Prof. Varsha finishes the chai and looks at the list. ‘Interesting.’ ZERO HOUR GOTHAM 2: THE PRACTICALS. YOU WIN!",

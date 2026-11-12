@@ -3,6 +3,7 @@ import json
 def main():
     level = load_level("level.json")
     state = {"room": level["start"],"inventory":[], "visited":[]}
+    sentences = ["pick", "grab", "take"]
     print(describe(level, state))
     while True:
         text = input("> ")
@@ -15,7 +16,7 @@ def main():
             state, message = move(level, state, noun)
             print(message)
             print(describe(level, state))
-        elif verb == "pick":
+        elif verb in sentences:
             state, message = take(level, state, noun)
             print(message)
         elif verb == "inventory":
@@ -67,11 +68,23 @@ def parse_command(text):
 def move(level, state, direction):
     current = state["room"]
     current_exit = level["rooms"][current]["exits"]
-    if direction in current_exit:
-        state["room"] = current_exit[direction]
-        return state, f"You go {direction}."
-    else:
+    inventory = state["inventory"]
+    if direction not in current_exit:
         return state, "You can't go that way."
+    if "locked" in level["rooms"][current]:
+        if direction in level["rooms"][current]["locked"]:
+            need = level["rooms"][current]["locked"][direction]
+            text = level["rooms"][current]["locked_text"][direction]  
+            if need not in inventory:
+                return state, text
+
+    target = current_exit[direction]
+    target_room = level["rooms"][target]
+    if target_room.get("dark", False) and "flashlight" not in inventory:
+        return state, target_room["dark_text"]
+
+    state["room"] = current_exit[direction]
+    return state, f"You go {direction}."
 
 
 def take(level, state, item):
