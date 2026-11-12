@@ -18,7 +18,7 @@
     },
     "corridor": {
       "description": "The empty, dark corridors of SCOE. To the north, Prof. Varsha patrols the staff corridor, holding the defaulter's list. Nobody gets past her empty-handed. The library is west, the computer lab is east.",
-      "short": "The dark SCOE corridor. library west, lab east, Prof. Varsha north",
+      "short": "The dark SCOE corridor. Library west, lab east, Prof. Varsha north",
       "exits": {"south": "gate", "west": "library", "east": "lab", "north": "staff_corridor"},
       "items": [],
       "locked": {"north": "chai"}
@@ -30,7 +30,7 @@
       "items": ["flashlight"]
     },
     "lab": {
-      "description": "In the glow of the flashlight, Abhijit Chandrakant Kapure is caught playing Roblox on a college PC, while on a video call with his girlfriend. Hour six. ‘Babe, one second, Batman is here.’ His girlfriend squints at the screen: ‘Just give him the key.’ Abhijeet obeys instantly and tosses Karan the staff key he ‘borrowed’ last semester from DS HOD, without looking up from the game. The corridor is back to the west.",
+      "description": "In the glow of the flashlight, Abhijit Chandrakant Kapure is caught playing Roblox on a college PC, while on a video call with his girlfriend. Hour six. ‘Babe, one second, Batman is here.’ His girlfriend squints at the screen: ‘Just give him the key.’ Abhijit obeys instantly and tosses Karan the staff key he ‘borrowed’ last semester from DS HOD, without looking up from the game. The corridor is back to the west.",
       "short": "The lab. Abhijit's call continues. Hour seven.",
       "exits": {"west": "corridor"},
       "items": ["key"],
@@ -44,7 +44,7 @@
       "locked": {"north": "key"}
     },
     "hod_cabin": {
-      "description": "Ajinkya is already inside, logged into the HOD’s computer. ‘Bhai, Mai teri proxy pichle 2 saal se laga raha hu'. You thought I’d stop now?’ Karan deletes his name from the defaulter's list, then hovers over Gururaj’s. ‘Some myths must stay on the list.’ Zero Hour. Gotham is saved. Roll credits... Kushal is learning CSS now. Abhijit is in hour eight of the call. Vishwesh finally gets to meet vishwesh jr (random kid). POST-CREDITS SCENE: Prof. Varsha finishes the chai and looks at the list. ‘Interesting.’ ZERO HOUR GOTHAM 2: THE PRACTICALS. YOU WIN!",
+      "description": "Ajinkya is already inside, logged into the HOD’s computer. ‘Bhai, Mai teri proxy pichle 2 saal se laga raha hu. You thought I’d stop now?’ Karan deletes his name from the defaulter's list, then hovers over Gururaj’s. ‘Some myths must stay on the list.’ Zero Hour. Gotham is saved. Roll credits... Kushal is learning CSS now. Abhijit is in hour eight of the call. Vishwesh finally gets to meet vishwesh jr (random kid). POST-CREDITS SCENE: Prof. Varsha finishes the chai and looks at the list. ‘Interesting.’ ZERO HOUR GOTHAM 2: THE PRACTICALS. YOU WIN!",
       "exits": {"south": "staff_corridor"},
       "items": []
     }

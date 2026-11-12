@@ -2,7 +2,7 @@ import json
 
 def main():
     level = load_level("level.json")
-    state = {"room": level["start"],"inventory":[]}
+    state = {"room": level["start"],"inventory":[], "visited":[]}
     print(describe(level, state))
     while True:
         text = input("> ")
@@ -27,10 +27,14 @@ def load_level(path):
     
 def describe(level, state):
     location = state["room"]
-    description = level["rooms"][location]["description"]
+    if location not in state["visited"]:
+        description1 = level["rooms"][location]["description"]
+        state["visited"].append(location)
+    else:
+        description1 = level["rooms"][location]["short"]
     exits = level["rooms"][location]["exits"]
     direction = "Exits: "  + ", ".join(exits)
-    describe1 = description + "\n" + direction
+    describe1 = description1 + "\n" + direction
     return describe1
 
 
