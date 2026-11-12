@@ -4,7 +4,7 @@
   "win_room": "hod_cabin",
   "rooms": {
     "gate": {
-      "description": "Karan steps out of a cab. The meter reads ₹800. Batman has a Batmobile; Karan has Uber. At the gate, Gururaj sips from a Thums Up bottle that is definitely not Thums Up. ‘Six semesters on the defaulter list, I’m basically a senior advisor now.’ He hands over Karan the Batman cape just as his phone buzzes: ‘Defaulter's list releasing in 60 minutes.’ The gate to the north is locked. Security wants an ID card.",
+      "description": "In a world where 70% attendance is mandatory... one man dared to bunk. Karan Sasane steps out of a cab. At the gate, Gururaj sips from a Thums Up bottle that is definitely not Thums Up. ‘Six semesters on the defaulter list, I’m basically a senior advisor now.’ He hands Karan the Batman cape just as his phone buzzes: ‘Defaulter’s list releasing in 60 minutes.’ The gate to the north is locked. Security wants an ID card.",
       "exits": {"west": "canteen", "north": "corridor"},
       "items": ["cape"],
       "locked": {"north": "card"}
