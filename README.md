@@ -1,5 +1,5 @@
 # Zero Hour Gotham
-#### Video Demo : <PASTE YOUR YOUTUBE LINK HERE>
+#### Video Demo : <https://youtu.be/Yb97e-pqhOE?si=6bMWiTNuBa7GiLPf>
 #### Description : Zero Hour Gotham: a JSON-driven text adventure engine in Python.
 
 ## The story
