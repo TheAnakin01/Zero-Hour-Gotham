@@ -67,7 +67,18 @@ def move(level, state, direction):
         return state, f"You go {direction}."
     else:
         return state, "You can't go that way."
-        
+
+
+def take(level, state, item):
+    location = state["room"]
+    items = level["rooms"][location]["items"]
+    if item in items:
+        items.remove(item)
+        state["inventory"].append(item)
+        return state, f"You picked up the {item}."
+    else:
+        return state, f"There's no {item} here."
+
 
 if __name__ == "__main__":
     main()
